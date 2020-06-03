@@ -1,0 +1,424 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}
+
+.maxWidth{
+  max-width: 1200px;
+}
+
+#wrapper{
+  width: 100%;
+}
+
+.userSign{
+  width: 100%;
+  background-color: #004796;
+}
+.userSign .maxWidth{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0 auto;
+  height: 31px;
+}
+.userSign .sign{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  margin-right: 30px;
+  font-size: 14px;
+}
+.userSign .sign a{
+  cursor: pointer;
+}
+
+.userSign .sign a:hover {
+  text-decoration-line: underline;
+}
+
+.userSign .sign a:nth-child(1) {
+  margin-right: 15px;
+}
+.userSign .sign a:nth-child(2) {
+  margin-left: 15px;
+}
+.userSign .sign .line{
+  width: 1px;
+  height: 15px;
+  background-color: #fff;
+  display: inline-block;
+}
+
+header {
+  width: 100%;
+  height: 112px;
+  display: flex;
+  margin: 0 auto;
+}
+
+header .logo{
+  display: flex;
+  align-items: center;
+}
+header .menu{
+  margin-left: 32px;
+}
+header .menu .menuWrap{
+  width: 100%;
+  height: 112px;
+  overflow: hidden;
+  transition: height 0.3s ease;
+  color: #1e1e1e;
+  position: relative;
+  z-index: 1;
+}
+header .menu .menuWrap::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+header .menu .mainMenu{
+  float: left;
+  text-align: center;
+  cursor: pointer;
+}
+
+header .menu .mainMenu .title{
+  font-weight: bold;
+  height: 112px;
+  font-size: 24px;
+  line-height: 112px;
+  padding: 0 15px;
+  transition: background-color 0.3s ease;
+}
+
+header .menu .subMenu{
+  font-size: 20px;
+  background-color: #fff;
+}
+header .menu .subMenu li{
+  height: 80px;
+  line-height: 80px;
+}
+
+header .menu .menuWrap:hover{
+  height: 275px;
+  overflow: visible;
+  border: 1px solid #88abda;
+}
+header .menu .menuWrap:hover .title{
+  color: #fff;
+  background-color: #88abda;
+}
+header .menu .subMenu li:hover{
+  color: #fff;
+  background-color: #70a6ff;
+}
+
+.slideWrap{
+  width: 100%;
+  height: 440px;
+  background-image: url(../images/main.png);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+/* ㅅ*/
+.slideWrap .quickMenu{
+  width: 1200px;
+  height: 200px;
+  position: absolute;
+  top: 340px;
+  left: calc(50% - 600px);
+  /* bottom: -120px; */
+  background-color:#eeeeee ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slideWrap .quickMenu .boxWrap{
+  display: flex;
+}
+.slideWrap .quickMenu .boxWrap .box:first-child{
+  margin-left: 0;
+}
+.slideWrap .quickMenu .boxWrap .box{
+   width: 178px;
+   height: 172px;
+   margin-left: 89px;
+   box-shadow: 0 1px 10px 0 rgba(205,205,205,.75);
+   background-color: #fff;
+}
+.slideWrap .quickMenu .boxWrap .box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #191919;
+}
+.slideWrap .quickMenu .boxWrap .box:hover{
+  background-color: #70a6ff;
+  color: #fff;
+}
+.slideWrap .quickMenu .boxWrap .box .icon1{
+  width: 68px;
+  height: 57px;
+  background-image: url(../images/icon1.png);
+}
+.slideWrap .quickMenu .boxWrap .box .icon2{
+  width: 70px;
+  height: 57px;
+  background-image: url(../images/icon2.png);
+}
+.slideWrap .quickMenu .boxWrap .box .icon3{
+  width: 60px;
+  height: 66px;
+  background-image: url(../images/icon3.png);
+}
+.slideWrap .quickMenu .boxWrap .box .icon4{
+  width: 58px;
+  height: 74px;
+  background-image: url(../images/icon4.png);
+}
+.slideWrap .quickMenu .boxWrap .box.num1:hover .icon1{
+  background-image: url(../images/icon1_1.png);
+}
+.slideWrap .quickMenu .boxWrap .box.num2:hover .icon2{
+  background-image: url(../images/icon2_1.png);
+}
+.slideWrap .quickMenu .boxWrap .box.num3:hover .icon3{
+  background-image: url(../images/icon3_1.png);
+}
+.slideWrap .quickMenu .boxWrap .box.num4:hover .icon4{
+  background-image: url(../images/icon4_1.png);
+}
+.slideWrap .quickMenu .boxWrap .box .icon{
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.slideWrap .quickMenu .boxWrap .box .name{
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 23px;
+  text-align: center;
+}
+
+
+.tableWrap{
+  width: 100%;
+  margin: 150px auto 0 auto;
+  padding: 0 35px 25px 35px;
+  display: flex;
+  justify-content: space-between;
+}
+.tableWrap .noticeWrap, .tableWrap .testScheduleWrap{
+  width: 600px;
+}
+.tableWrap .noticeWrap .titleWrap{
+  width: 100%;
+  border-bottom: 2px solid #004796;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 8px;
+  color: #004796;
+  
+}
+
+.tableWrap .noticeWrap .titleWrap .more{
+  /*font-size: 14px;*/
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.tableWrap .noticeWrap .titleWrap .more .icon{
+  width: 14px;
+  height: 14px;
+  background-image: url(../images/plus_icon.png);
+  background-size: 14px 14px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 7px;
+}
+
+.tableWrap .noticeWrap .titleWrap .more .icon:hover{
+  background-image: url(../images/plus_icon_on.png);
+
+}
+
+.tableWrap .noticeWrap:nth-child(1){
+  margin-right: 8px;
+}
+.tableWrap .noticeWrap:nth-child(2){
+  margin-left: 8px;
+}
+
+.tableWrap table{
+  width: 100%;
+  min-height: 364px;
+  border-spacing: 0;
+  text-align: center;
+  border-collapse: collapse;
+  border-bottom: 1px solid #c9c9c9;
+}
+.tableWrap table th{
+  font-weight: bold;
+  border-bottom: 1px solid #c9c9c9;
+  padding: 15px;
+}
+.tableWrap table th:hover{
+  background-color: #faa916;
+  color: #fff;
+}
+.tableWrap table tr{
+  cursor: pointer;
+  border-bottom: 1px solid #c9c9c9;
+}
+.tableWrap table td{
+  padding: 15px;
+}
+.tableWrap table tbody tr:last-of-type{
+  border-bottom: none;
+}
+.tableWrap table tbody tr:hover{
+  background: linear-gradient( to bottom, rgba(215, 228, 239, 0.34), rgba(221, 232, 242, 0.19) );
+}
+
+.tableWrap .pagination{
+  width: 100%;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tableWrap .pagination .numWrap{
+  display: flex;
+}
+.tableWrap .pagination .num{
+  width: 20px;
+  height: 20px;
+  background-color: #88abda;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 2px;
+  color: #fff;
+  margin-left: 12px;
+  cursor: pointer;
+  font-size: 17.25px;
+}
+.tableWrap .pagination .num:first-child{
+  margin-left: 0;
+}
+.tableWrap .pagination .num.active{
+  background-color: #faa916;
+  cursor: default;
+}
+
+#footer{
+  width: 100%;
+}
+
+#footer .pptos{
+  width: 100%;
+  height: 45px;
+  background-color: #dcdcdc;
+}
+#footer .pptos .pptosWrap{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+#footer .pptos .pptosWrap .btns{
+  display: flex;
+  align-items: center;
+}
+
+#footer .pptos .pptosWrap .btns a:first-child{
+  margin-left: 0;
+}
+#footer .pptos .pptosWrap .btns a{
+  cursor: pointer;
+  margin-left: 12px;
+  color: #777;
+  border: 1px solid #959595;
+  border-radius: 6px;
+  outline: none;
+  background-color: #fff;
+  padding: 5px 14px;
+  font-size: 13px;
+}
+#footer .pptos .pptosWrap .btns a:hover{
+  text-decoration-line: underline;
+}
+
+
+
+#footer .info{
+  padding: 27px 0 30px 0;
+}
+#footer .info .maxWidth{
+  margin: 0 auto;
+}
+#footer .info .infoWrap{
+  display: flex;
+  justify-content: space-between;
+}
+#footer .info .company{
+  color: #777;
+  line-height: 20px;
+  font-size: 14px;
+}
+
+.quickMenu{
+  width: 124px;
+  position: fixed;
+  top: 190px;
+  right: 10%;
+  z-index: 1;
+  background-color: #fff;
+}
+
+.quickMenu .menu li:hover{
+  background-color: #dcdcdc;
+
+}
+
+.quickMenu .logo{
+  width: 100%;
+  height: 100px;
+}
+.quickMenu .menu li{
+  line-height: 15px;
+  vertical-align: middle;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin: 0px;
+  cursor: pointer;
+  border-left: solid 1px #b5b5b5;
+  border-right: solid 1px #b5b5b5;
+  border-bottom: solid 1px #b5b5b5;
+}
+.quickMenu .quickTopOver{
+  width: 100%;
+  cursor: pointer;
+  height: 36px;
+}

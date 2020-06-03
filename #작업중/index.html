@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>사회보험관리사</title>
+  <link rel="stylesheet" href="./assets/css_js/font.css">
+  <link rel="stylesheet" href="./assets/css_js/index.css">
+  <script src="./assets/css_js/index.js"></script>
+</head>
+<body>
+  <!-- 전체 -->
+  <div id="wrapper"> 
+
+    <!-- 퀵메뉴 -->
+    <div class="quickMenu">
+      <img src="./assets/images/quick_menu_title.png" class="quickLogo" alt="quickMenu">
+      <ul class="menu">
+        <li>1:1 문의</li>
+        <li>원서접수</li>
+        <li>발급신청</li>
+        <li>유의사항</li>
+      </ul>
+      <img src="./assets/images/quick_menu_top_over.png" onclick="methods.scrollToTop()" class="quickTopOver" alt="quickTopOver">
+    </div>
+
+    <!-- 상단헤더(로그인/상단메뉴) -->
+    <div id="header">
+      <div class="userSign">
+        <div class="maxWidth">
+          <div class="sign">
+            <a href="./index_1.html" target="_self">로그인</a>
+            |
+            <a href="#" target="_self">회원가입</a>
+          </div>
+        </div>
+      </div>
+      <header class="header maxWidth">
+        <div class="logo">
+          <a href="#">
+            <img src="./assets/images/logo.png" alt="logo">
+          </a>
+        </div>
+        <div class="menu">
+          <ul class="menuWrap">
+            <li class="mainMenu">
+              <div class="title">과정안내</div>
+              <ul class="subMenu">
+                <li><a href="./index_2.html">과정개요</a></li>
+                <li><a href="#">수강신청</a></li>
+              </ul>
+            </li>
+            <li class="mainMenu">
+              <div class="title">시험안내</div>
+              <ul class="subMenu">
+                <li><a href="#">시험개요</a></li>
+                <li><a href="#">시험일정</a></li>
+              </ul>
+            </li>
+            <li class="mainMenu">
+              <div class="title">원서접수</div>
+              <ul class="subMenu">
+                <li><a href="#">원서접수</a></li>
+                <li><a href="#">접수내역</a></li>
+              </ul>
+            </li>
+            <li class="mainMenu">
+              <div class="title">시험응시</div>
+              <ul class="subMenu">
+                <li><a href="#">시험응시</a></li>
+                <li><a href="#">유의사항</a></li>
+              </ul>
+            </li>
+            <li class="mainMenu">
+              <div class="title">자격증</div>
+              <ul class="subMenu">
+                <li><a href="#">발급신청</a></li>
+                <li><a href="#">진행상황</a></li>
+              </ul>
+            </li>
+            <li class="mainMenu">
+              <div class="title">열린마당</div>
+              <ul class="subMenu">
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">자료실</a></li>
+              </ul>
+            </li>
+            <li class="mainMenu">
+              <div class="title">마이페이지</div>
+              <ul class="subMenu">
+                <li><a href="#">1:1 문의</a></li>
+                <li><a href="#">정보수정</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </header>
+  </div>
+
+  <!-- 중간 컨테이너 -->
+  <div id="container">
+    <div class="slideWrap">
+      <div class="quickMenu">
+        <div class="boxWrap">
+          <div class="box num1">
+            <div class="contents">
+              <div class="icon icon1"></div>
+              <div class="name">1:1 문의</div>
+            </div>
+          </div>
+          <div class="box num2">
+            <div>
+              <div class="icon icon2"></div>
+              <div class="name">원서접수</div>
+            </div>
+          </div>
+          <div class="box num3">
+            <div>
+              <div class="icon icon3"></div>
+              <div class="name">발급신청</div>
+            </div>
+          </div>
+          <div class="box num4">
+            <div>
+              <div class="icon icon4"></div>
+              <div class="name">유의사항</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tableWrap maxWidth">
+      <div class="noticeWrap">
+        <div class="titleWrap">
+          <h2>공지사항</h2>
+          <div class="more">
+            <p class="icon"></p>
+            <a href="#" target="_self">전체보기</a>
+
+          </div>
+        </div>
+        <table class="notice">
+          <tbody>
+            <tr>
+              <td>test</td>
+              <td>test</td>
+              <td>test</td>
+              <td>test</td>
+            </tr>
+            <tr>
+              <td>test</td>
+              <td>test</td>
+              <td>test</td>
+              <td>test</td>
+            </tr>
+            <tr>
+              <td>test</td>
+              <td>test</td>
+              <td>test</td>
+              <td>test</td>
+            </tr>
+            <tr>
+              <td>test</td>
+              <td>test</td>
+              <td>test</td>
+              <td>test</td>
+            </tr>
+            <tr>
+              <td>test</td>
+              <td>test</td>
+              <td>test</td>
+              <td>test</td>
+            </tr>
+            <tr>
+              <td>test</td>
+              <td>test</td>
+              <td>test</td>
+              <td>test</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="pagination">
+          <div class="numWrap">
+            <a href="#" class="num active" onclick="methods.paginationAction('notice', 0)">1</a>
+            <a href="#" class="num" onclick="methods.paginationAction('notice', 1)">2</a>
+            <a href="#" class="num" onclick="methods.paginationAction('notice', 2)">3</a>
+          </div>
+        </div>
+      </div>
+      <div class="noticeWrap testSchedule">
+        <div class="titleWrap">
+          <h2>시험일정</h2>
+          <div class="more">
+            <div class="icon"></div>
+            <a href="#" target="_self">전체보기</a>
+          </div>
+        </div>
+        <table class="notice">
+          <thead>
+            <tr>
+              <th>회차</th>
+              <th>원서접수</th>
+              <th>시험일자</th>
+              <th>발표일</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>test</td>
+              <td>test</td>
+              <td>test</td>
+              <td>test</td>
+            </tr>
+            <tr>
+              <td>test</td>
+              <td>test</td>
+              <td>test</td>
+              <td>test</td>
+            </tr>
+            <tr>
+              <td>test</td>
+              <td>test</td>
+              <td>test</td>
+              <td>test</td>
+            </tr>
+            <tr>
+              <td>test</td>
+              <td>test</td>
+              <td>test</td>
+              <td>test</td>
+            </tr>
+            <tr>
+              <td>test</td>
+              <td>test</td>
+              <td>test</td>
+              <td>test</td>
+            </tr>
+            <tr>
+              <td>test</td>
+              <td>test</td>
+              <td>test</td>
+              <td>test</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="pagination">
+          <div class="numWrap">
+            <a href="#" class="num active" onclick="methods.paginationAction('testSchedule', 0)">1</a>
+            <a href="#" class="num" onclick="methods.paginationAction('testSchedule', 1)">2</a>
+            <a href="#" class="num" onclick="methods.paginationAction('testSchedule', 2)">3</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!-- 하단 푸터 -->
+    <div id="footer">
+      <div class="pptos">
+        <div class="pptosWrap maxWidth">
+          <div class="btns">
+            <a href="#">회사소개</a>
+            <a href="#">개인정보처리방침</a>
+            <a href="#">이용약관</a>
+          </div>
+        </div>
+      </div>
+      <div class="info">
+        <div class="infoWrap maxWidth">
+          <p class="company">
+            대표이사 | 사업자등록번호 409-8133798 | 대표전화 1522-6652<br>
+            주소: 광주광역시 북구 경양로 170 한경빌딩 7층
+          </p>
+          <img src="./assets/images/logo_gray.png" alt="logoFooter">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
